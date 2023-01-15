@@ -1,0 +1,472 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+/*Section*/
+
+.container{
+    display: flex;
+}
+
+
+.principal{
+ justify-content:right;
+ align-items: flex-end;
+}
+
+#temoignage{
+  justify-content: space-around;
+}
+
+#main{
+  background-image: url("https://justinpageaud.alwaysdata.net/img/feuilles.jpg");
+  height: 700px;
+}
+
+#main_text{
+  color:white!important;
+  z-index: 1;
+  font-size: 3em;
+  margin-right: 2%;
+}
+
+#main_text>span{
+  color:#D5F31F!important;
+  z-index: 1;
+  font-size: xxx-large;
+  margin-right: 2%;
+  flex-grow: 2;
+}
+
+.titre-section{
+   margin: auto;
+   font-size: 1.7em;
+   margin-top:2%;
+   margin-bottom:1%;
+   color:#029D5B;
+}
+
+.paragraphe-section{
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom:2%;
+  width: 85%;
+}
+
+.temoignage-paragraphe{
+  justify-content: center;
+  margin: auto;
+
+}
+
+#temoignage{
+  display: flex;
+}
+
+#temoignage>img{
+  border-radius: 50%;
+}
+
+#temoignage>div
+{
+  text-align: -webkit-center;
+  padding: 5%;
+}
+
+#satisfaction{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #053B44;
+}
+
+#satisfaction>div{
+  text-align: -webkit-center;
+}
+
+#satisfaction>div>h3{
+    color: #d5F31F;
+    font-size: xx-large;
+    margin-bottom: 1px;
+  }
+
+#satisfaction>div>p{
+    color: white;
+    margin-bottom: 25%;
+  }
+#service{
+    justify-content: center;
+    display: flex;
+}
+
+section#service>div {
+    height: 30%;
+    width: 50%;
+    text-align: -webkit-center;
+}
+
+section#service>div>img{
+  padding:10%;
+  background-color: #EBE6E6;
+  border-radius: 20px;
+} 
+
+h3.service {
+    font-size: x-large;
+}
+
+.formulaire{
+    display: flex;
+    justify-content: center;
+    background-color: #053B44;
+}
+
+#titre-contact{
+    color: #D5F31F!important;
+    font-size: xxx-large;
+    margin-bottom: auto;
+}
+
+input {
+    border-bottom: white solid 3px;
+    background-color: #053B44;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+
+}
+
+form{
+    margin-bottom: 5%;
+    width: 80%;
+    font-size: larger;
+    text-align: center;
+}
+label{
+  color: white;
+}
+
+.debut-formulaire{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.nom-label{
+  grid-row: 1;
+}
+
+.nom-categorie{
+  grid-row: 1;
+  
+}
+.nom-telephone{
+  grid-row: 3;
+}
+.nom-ville{
+  grid-row: 3;
+}
+
+.input-label{
+  grid-row: 2;
+}
+
+.input-categorie{
+  grid-row: 2;
+  
+}
+.input-telephone{
+  grid-row: 4;
+}
+.input-ville{
+  grid-row: 4;
+}
+
+.paragraphe-formulaire{
+    width: 80%;
+    font-size: xx-large;
+    text-align: center;
+    color:white;
+}
+.bouton-envoi{
+  margin-top: 5%;
+  background-color:#D5F31F;
+  padding: 20px;
+  border-radius: 25%;
+  border: none;
+  cursor: pointer;
+}
+.envoi{
+    display: flex;
+    justify-content: right;
+}
+
+.email,.message{
+  display: grid;
+  margin-top:2%;
+}
+
+.message>textarea{
+  margin-top: 20%;
+      border-bottom: white solid 3px;
+    background-color: #053B44;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+.a-propos{
+  display: flex;
+  margin-top:3%;
+}
+
+.avantages-nous{
+  width: 50%;
+  border-radius: 5%;
+  margin-left: 1%;
+}
+
+.a-propos-2{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding-left: 5%;
+    padding-right: 3%;
+    border: #029D5B 2px solid;
+    border-radius: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.a-propos-titre{
+    grid-column: 2;
+    margin-top: 50%;
+}
+
+.a-propos-paragraphe{
+    grid-column: 1;
+    font-size: 1.2em;
+    grid-row: 2;
+    grid-column-end: span 3;
+}
+
+
+.a-propos-avantage{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+.a-propos-avantage-1{
+  grid-row:3;
+  padding: 20px;
+  border:2px solid #029D5B;
+  border-radius: 50%;
+  background-color: white;
+}
+.a-propos-avantage-2{
+  grid-row:3;
+  padding: 20px;
+  border:2px solid #029D5B;
+  border-radius: 50%;
+  background-color: white;
+}
+.a-propos-avantage-3{
+  grid-row:3;
+  padding: 20px;
+  border:2px solid #029D5B;
+  border-radius: 50%;
+  background-color: white;
+}
+
+h3.footer-titre{
+    color: #ffffff;
+    font-size: x-large;
+    margin-bottom: 1px;
+}
+
+#footer{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #053B44;
+  padding-bottom: 3%;
+}
+
+#footer>div{
+  text-align: -webkit-center;
+}
+
+#footer>div>p{
+    color: white;
+  }
+
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  section#temoignage{
+    display: block;
+  }
+  .a-propos {
+    display: block;
+    margin-top: 3%;
+  }
+  .avantages-nous{
+    width: 100%;
+  }
+  .a-propos-2{
+    width: 95%;
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: -11px;
+    border: #029D5B 1px solid;
+    border-radius: 5%;
+    margin-left: 2%;
+    grid-gap: 1px;
+    padding-left: 0px; 
+    padding-right: 2%;
+    }
+    body > center > img{
+      width: 100%;
+    }
+    #footer{
+      display: block;
+    }
+
+}
