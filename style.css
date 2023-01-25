@@ -3,7 +3,7 @@ body {
   font-family: Helvetica, sans-serif;
   background-color: #f4f4f4;
 }
-/*test github*/
+
 a {
   color: #000;
 }
@@ -233,6 +233,8 @@ h3.service {
     font-size: x-large;
 }
 
+/* Formulaire */
+
 .formulaire{
     display: flex;
     justify-content: center;
@@ -332,6 +334,8 @@ label{
     border-right: none;
 }
 
+/* A propos */
+
 .a-propos{
   display: flex;
   margin-top:3%;
@@ -396,6 +400,8 @@ label{
   border-radius: 50%;
   background-color: white;
 }
+
+/* footer */
 
 h3.footer-titre{
     color: #ffffff;
